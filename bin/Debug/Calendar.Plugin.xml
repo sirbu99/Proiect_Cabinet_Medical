@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Calendar.Plugin</name>
+    </assembly>
+    <members>
+        <member name="P:Calendar.Plugin.Shared.Calendar.MinDate">
+            <summary>
+            Gets or sets the minimum date.
+            </summary>
+            <value>The minimum date.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.MaxDate">
+            <summary>
+            Gets or sets the max date.
+            </summary>
+            <value>The max date.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.StartDate">
+            <summary>
+            Gets or sets a date, to pick the month, the calendar is focused on
+            </summary>
+            <value>The start date.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.StartDay">
+            <summary>
+            Gets or sets the day the calendar starts the week with.
+            </summary>
+            <value>The start day.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.BorderWidth">
+            <summary>
+            Gets or sets the border width of the calendar.
+            </summary>
+            <value>The width of the border.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.OuterBorderWidth">
+            <summary>
+            Gets or sets the width of the whole calandar border.
+            </summary>
+            <value>The width of the outer border.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.BorderColor">
+            <summary>
+            Gets or sets the border color of the calendar.
+            </summary>
+            <value>The color of the border.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DatesBackgroundColor">
+            <summary>
+            Gets or sets the background color of the normal dates.
+            </summary>
+            <value>The color of the dates background.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DatesTextColor">
+            <summary>
+            Gets or sets the text color of the normal dates.
+            </summary>
+            <value>The color of the dates text.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DatesFontAttributes">
+            <summary>
+            Gets or sets the dates font attributes.
+            </summary>
+            <value>The dates font attributes.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DatesFontSize">
+            <summary>
+            Gets or sets the font size of the normal dates.
+            </summary>
+            <value>The size of the dates font.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DatesFontFamily">
+            <summary>
+            Gets or sets the font family of dates.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.ShowNumOfMonths">
+            <summary>
+            Gets or sets a the number of months to show
+            </summary>
+            <value>The start date.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.ShowInBetweenMonthLabels">
+            <summary>
+            Gets or sets a the number of months to show
+            </summary>
+            <value>The start date.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DateCommand">
+            <summary>
+            Gets or sets the selected date command.
+            </summary>
+            <value>The date command.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.EnableSwiping">
+            <summary>
+            Gets or sets if the calendar swiping is enabled.
+            </summary>
+            <value>The swiping enabled property</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.IsSwipingAnimated">
+            <summary>
+            Gets or sets if the calendar swiping is enabled.
+            </summary>
+            <value>The swiping enabled property</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.LeftSwipeCommand">
+            <summary>
+            The right swipe command for the calander navigation.
+            </summary>
+            <value>The Left swipe command</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.RightSwipeCommand">
+            <summary>
+            The right swipe command for the calendar navigation.
+            </summary>
+            <value>The Right swipe command</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DisableAllDates">
+            <summary>
+            Gets or sets wether all dates should be disabled by default or not
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DisableDatesLimitToMaxMinRange">
+            <summary>
+            Gets or sets wether disabled dates limits the left/right scrolling (default is false)
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DisabledBorderWidth">
+            <summary>
+            Gets or sets the border width of the disabled dates.
+            </summary>
+            <value>The width of the disabled border.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DisabledBorderColor">
+            <summary>
+            Gets or sets the border color of the disabled dates.
+            </summary>
+            <value>The color of the disabled border.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DisabledBackgroundColor">
+            <summary>
+            Gets or sets the background color of the disabled dates.
+            </summary>
+            <value>The color of the disabled background.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DisabledTextColor">
+            <summary>
+            Gets or sets the text color of the disabled dates.
+            </summary>
+            <value>The color of the disabled text.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DisabledFontSize">
+            <summary>
+            Gets or sets the font size of the disabled dates.
+            </summary>
+            <value>The size of the disabled font.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DisabledFontAttributes">
+            <summary>
+            Gets or sets the font family of disabled dates.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DisabledFontFamily">
+            <summary>
+            Gets or sets the font family of disabled dates.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.TitleLabel">
+            <summary>
+            Gets the title label in the month navigation.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.TitleLeftArrow">
+            <summary>
+            Gets the left button of the month navigation.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.TitleRightArrow">
+            <summary>
+            Gets the right button of the month navigation.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.MonthNavigationLayout">
+            <summary>
+            Gets the right button of the month navigation.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.MonthNavigationShow">
+            <summary>
+            Gets or sets wether to show the month navigation.
+            </summary>
+            <value>The month navigation show.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.TitleLabelFormat">
+            <summary>
+            Gets or sets the format of the title in the month navigation.
+            </summary>
+            <value>The title label format.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.EnableTitleMonthYearView">
+            <summary>
+            Gets or sets wether on Title pressed the month, year or normal view is showen
+            </summary>
+            <value>The weekdays show.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.MonthYearButtonCommand">
+            <summary>
+            Gets or sets the selected date command.
+            </summary>
+            <value>The date command.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.NumberOfWeekTextColor">
+            <summary>
+            Gets or sets the text color of the number of the week labels.
+            </summary>
+            <value>The color of the weekdays text.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.NumberOfWeekBackgroundColor">
+            <summary>
+            Gets or sets the background color of the number of the week labels.
+            </summary>
+            <value>The color of the number of the weeks background.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.NumberOfWeekFontSize">
+            <summary>
+            Gets or sets the font size of the number of the week labels.
+            </summary>
+            <value>The size of the weekdays font.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.NumberOfWeekFontAttributes">
+            <summary>
+            Gets or sets the font attributes of the number of the week labels.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.NumberOfWeekFontFamily">
+            <summary>
+            Gets or sets the font family of the number of the week labels.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.ShowNumberOfWeek">
+            <summary>
+            Gets or sets wether to show the number of the week labels.
+            </summary>
+            <value>The weekdays show.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.CalendarWeekRule">
+            <summary>
+            Gets or sets what CalendarWeekRule to use for the week numbers
+            </summary>
+            <value>The weekdays show.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DatesTextColorOutsideMonth">
+            <summary>
+            Gets or sets the text color of the dates not in the focused month.
+            </summary>
+            <value>The dates text color outside month.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DatesBackgroundColorOutsideMonth">
+            <summary>
+            Gets or sets the background color of the dates not in the focused month.
+            </summary>
+            <value>The dates background color outside month.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DatesFontAttributesOutsideMonth">
+            <summary>
+            Gets or sets the dates font attributes for dates outside of the month.
+            </summary>
+            <value>The dates font attributes.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.DatesFontFamilyOutsideMonth">
+            <summary>
+            Gets or sets the dates font family for dates outside of the month.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.SelectedDate">
+            <summary>
+            Gets or sets a date the selected date
+            </summary>
+            <value>The selected date.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.MultiSelectDates">
+            <summary>
+            Gets or sets multiple Dates can be selected.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.SelectedDates">
+            <summary>
+            Gets the selected dates when MultiSelectDates is true
+            </summary>
+            <value>The selected date.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.SelectedBorderWidth">
+            <summary>
+            Gets or sets the border width of the selected date.
+            </summary>
+            <value>The width of the selected border.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.SelectedBorderColor">
+            <summary>
+            Gets or sets the color of the selected date.
+            </summary>
+            <value>The color of the selected border.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.SelectedBackgroundColor">
+            <summary>
+            Gets or sets the background color of the selected date.
+            </summary>
+            <value>The color of the selected background.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.SelectedTextColor">
+            <summary>
+            Gets or sets the text color of the selected date.
+            </summary>
+            <value>The color of the selected text.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.SelectedFontSize">
+            <summary>
+            Gets or sets the font size of the selected date.
+            </summary>
+            <value>The size of the selected font.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.SelectedFontAttributes">
+            <summary>
+            Gets or sets the dates font attributes for selected dates.
+            </summary>
+            <value>The dates font attributes.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.SelectedFontFamily">
+            <summary>
+            Gets or sets the font family of selected dates.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.WeekdaysTextColor">
+            <summary>
+            Gets or sets the text color of the weekdays labels.
+            </summary>
+            <value>The color of the weekdays text.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.WeekdaysBackgroundColor">
+            <summary>
+            Gets or sets the background color of the weekdays labels.
+            </summary>
+            <value>The color of the weekdays background.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.WeekdaysFontSize">
+            <summary>
+            Gets or sets the font size of the weekday labels.
+            </summary>
+            <value>The size of the weekdays font.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.WeekdaysFontFamily">
+            <summary>
+            Gets or sets the font family of the weekday labels.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.WeekdaysFormat">
+            <summary>
+            Gets or sets the date format of the weekday labels.
+            </summary>
+            <value>The weekdays format.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.WeekdaysFontAttributes">
+            <summary>
+            Gets or sets the font attributes of the weekday labels.
+            </summary>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.Calendar.WeekdaysShow">
+            <summary>
+            Gets or sets wether to show the weekday labels.
+            </summary>
+            <value>The weekdays show.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.SpecialDate.BackgroundImage">
+            <summary>
+            Gets or sets the background image (only working on iOS and Android).
+            </summary>
+            <value>The background pattern.</value>
+        </member>
+        <member name="P:Calendar.Plugin.Shared.SpecialDate.BackgroundPattern">
+            <summary>
+            Gets or sets the background pattern (only working on iOS and Android).
+            </summary>
+            <value>The background pattern.</value>
+        </member>
+    </members>
+</doc>

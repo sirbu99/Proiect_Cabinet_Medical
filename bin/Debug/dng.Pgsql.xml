@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>dng.Pgsql</name>
+    </assembly>
+    <members>
+        <member name="M:Npgsql.Executer.ExecuteReader(System.Action{Npgsql.NpgsqlDataReader},System.Data.CommandType,System.String,Npgsql.NpgsqlParameter[])">
+            <summary>
+            若使用【读写分离】，查询【从库】条件cmdText.StartsWith("SELECT ")，否则查询【主库】
+            </summary>
+            <param name="readerHander"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+        </member>
+        <member name="M:Npgsql.Executer.ExecuteArray(System.Data.CommandType,System.String,Npgsql.NpgsqlParameter[])">
+            <summary>
+            若使用【读写分离】，查询【从库】条件cmdText.StartsWith("SELECT ")，否则查询【主库】
+            </summary>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.Executer.ExecuteNonQuery(System.Data.CommandType,System.String,Npgsql.NpgsqlParameter[])">
+            <summary>
+            在【主库】执行
+            </summary>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.Executer.ExecuteScalar(System.Data.CommandType,System.String,Npgsql.NpgsqlParameter[])">
+            <summary>
+            在【主库】执行
+            </summary>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.Executer.ExecuteReaderAsync(System.Func{Npgsql.NpgsqlDataReader,System.Threading.Tasks.Task},System.Data.CommandType,System.String,Npgsql.NpgsqlParameter[])">
+            <summary>
+            若使用【读写分离】，查询【从库】条件cmdText.StartsWith("SELECT ")，否则查询【主库】
+            </summary>
+            <param name="readerHander"></param>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.Executer.ExecuteArrayAsync(System.Data.CommandType,System.String,Npgsql.NpgsqlParameter[])">
+            <summary>
+            若使用【读写分离】，查询【从库】条件cmdText.StartsWith("SELECT ")，否则查询【主库】
+            </summary>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.Executer.ExecuteNonQueryAsync(System.Data.CommandType,System.String,Npgsql.NpgsqlParameter[])">
+            <summary>
+            在【主库】执行
+            </summary>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.Executer.ExecuteScalarAsync(System.Data.CommandType,System.String,Npgsql.NpgsqlParameter[])">
+            <summary>
+            在【主库】执行
+            </summary>
+            <param name="cmdType"></param>
+            <param name="cmdText"></param>
+            <param name="cmdParms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.Executer.CacheRemove(System.String[])">
+            <summary>
+            循环或批量删除缓存键，项目启动时检测：Cache.Remove("key1|key2") 若成功删除 key1、key2，说明支持批量删除
+            </summary>
+            <param name="keys">缓存键[数组]</param>
+        </member>
+        <member name="M:Npgsql.Executer.CacheRemoveAsync(System.String[])">
+            <summary>
+            循环或批量删除缓存键，项目启动时检测：Cache.Remove("key1|key2") 若成功删除 key1、key2，说明支持批量删除
+            </summary>
+            <param name="keys">缓存键[数组]</param>
+        </member>
+        <member name="M:Npgsql.Executer.CacheShell``1(System.String,System.Int32,System.Func{``0},System.Func{``0,System.String},System.Func{System.String,``0})">
+            <summary>
+            缓存壳
+            </summary>
+            <typeparam name="T">缓存类型</typeparam>
+            <param name="key">缓存键</param>
+            <param name="timeoutSeconds">缓存秒数</param>
+            <param name="getData">获取源数据的函数</param>
+            <param name="serialize">序列化函数</param>
+            <param name="deserialize">反序列化函数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.Executer.CacheShell``1(System.String,System.String,System.Int32,System.Func{``0},System.Func{System.ValueTuple{``0,System.Int64},System.String},System.Func{System.String,System.ValueTuple{``0,System.Int64}})">
+            <summary>
+            缓存壳(哈希表)
+            </summary>
+            <typeparam name="T">缓存类型</typeparam>
+            <param name="key">缓存键</param>
+            <param name="field">字段</param>
+            <param name="timeoutSeconds">缓存秒数</param>
+            <param name="getData">获取源数据的函数</param>
+            <param name="serialize">序列化函数</param>
+            <param name="deserialize">反序列化函数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.Executer.CacheShellAsync``1(System.String,System.Int32,System.Func{System.Threading.Tasks.Task{``0}},System.Func{``0,System.String},System.Func{System.String,``0})">
+            <summary>
+            缓存壳
+            </summary>
+            <typeparam name="T">缓存类型</typeparam>
+            <param name="key">缓存键</param>
+            <param name="timeoutSeconds">缓存秒数</param>
+            <param name="getDataAsync">获取源数据的函数</param>
+            <param name="serialize">序列化函数</param>
+            <param name="deserialize">反序列化函数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.Executer.CacheShellAsync``1(System.String,System.String,System.Int32,System.Func{System.Threading.Tasks.Task{``0}},System.Func{System.ValueTuple{``0,System.Int64},System.String},System.Func{System.String,System.ValueTuple{``0,System.Int64}})">
+            <summary>
+            缓存壳(哈希表)
+            </summary>
+            <typeparam name="T">缓存类型</typeparam>
+            <param name="key">缓存键</param>
+            <param name="field">字段</param>
+            <param name="timeoutSeconds">缓存秒数</param>
+            <param name="getDataAsync">获取源数据的函数</param>
+            <param name="serialize">序列化函数</param>
+            <param name="deserialize">反序列化函数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.Executer.BeginTransaction(System.TimeSpan)">
+            <summary>
+            启动事务
+            </summary>
+        </member>
+        <member name="M:Npgsql.Executer.AutoCommitTransaction">
+            <summary>
+            自动提交事务
+            </summary>
+        </member>
+        <member name="M:Npgsql.Executer.CommitTransaction">
+            <summary>
+            提交事务
+            </summary>
+        </member>
+        <member name="M:Npgsql.Executer.RollbackTransaction">
+            <summary>
+            回滚事务
+            </summary>
+        </member>
+        <member name="M:Npgsql.Executer.Transaction(System.Action)">
+            <summary>
+            开启事务（不支持异步），60秒未执行完将自动提交
+            </summary>
+            <param name="handler">事务体 () => {}</param>
+        </member>
+        <member name="M:Npgsql.Executer.Transaction(System.Action,System.TimeSpan)">
+            <summary>
+            开启事务（不支持异步）
+            </summary>
+            <param name="handler">事务体 () => {}</param>
+            <param name="timeout">超时，未执行完将自动提交</param>
+        </member>
+        <member name="M:Npgsql.Executer.NewMongodbId">
+            <summary>
+            生成类似Mongodb的ObjectId有序、不重复Guid
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.Executer.Parse1010(System.String)">
+            <summary>
+            将 1010101010 这样的二进制字符串转换成 BitArray
+            </summary>
+            <param name="_1010">1010101010</param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.SelectBuild`2.Master">
+            <summary>
+            若使用读写分离，默认查询【从库】，使用本方法明确查询【主库】
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.SelectBuild`2.Over(System.String,System.String,System.String)">
+            <summary>
+            窗口函数原型：@field OVER(PARTITION BY @partitionBy ORDER BY @orderby)
+            </summary>
+            <param name="field">如：rank()、avg(xx)、sum(xxx)等聚合函数，传null会清除链式累积的over</param>
+            <param name="partitionBy">如：表字段 xxx</param>
+            <param name="orderby">如：表字段 xxx DESC</param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.SelectBuild`2.DistinctOn(System.String,System.String)">
+            <summary>
+            pgsql特性：只保留在给定表达式上计算相等的行集合中的第一行
+            </summary>
+            <param name="fields">expression [, ...]</param>
+            <param name="orderby">DISTINCT ON表达式必须匹配最左边的 ORDER BY表达式</param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.SelectBuild`1.Aggregate``1(System.String,System.Object[])">
+            <summary>
+            查询指定字段，返回元组或单值
+            </summary>
+            <typeparam name="T">元组或单值，如：.Aggregate&lt;(int id, string name)&gt;("id,title")，或 .Aggregate&lt;int&gt;("id")</typeparam>
+            <param name="fields">返回的字段，用逗号分隔，如：id,name</param>
+            <param name="parms">输入参数可以是任意对象，或者NpgsqlParameter</param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.SelectBuild`1.Any">
+            <summary>
+            执行SQL，若查询语句存在记录则返回 true，否则返回 false
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.SelectBuild`1.AggregateAsync``1(System.String,System.Object[])">
+            <summary>
+            查询指定字段，返回元组或单值
+            </summary>
+            <typeparam name="T">元组或单值，如：.Aggregate&lt;(int id, string name)&gt;("id,title")，或 .Aggregate&lt;int&gt;("id")</typeparam>
+            <param name="fields">返回的字段，用逗号分隔，如：id,name</param>
+            <param name="parms">输入参数可以是任意对象，或者NpgsqlParameter</param>
+            <returns></returns>
+        </member>
+        <member name="M:Npgsql.SelectBuild`1.AnyAsync">
+            <summary>
+            执行SQL，若查询语句存在记录则返回 true，否则返回 false
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NpgsqlTypesExtensions.Distance(NpgsqlTypes.NpgsqlPoint,NpgsqlTypes.NpgsqlPoint)">
+            <summary>
+            测量两个经纬度的距离，返回单位：米
+            </summary>
+            <param name="that">经纬坐标1</param>
+            <param name="point">经纬坐标2</param>
+            <returns>返回距离（单位：米）</returns>
+        </member>
+    </members>
+</doc>
